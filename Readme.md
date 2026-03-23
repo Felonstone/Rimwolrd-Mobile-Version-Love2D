@@ -6,9 +6,9 @@ Uma adaptação experimental do aclamado simulador de colônia **RimWorld** para
 
 
 ## 📸 Screenshots / Demonstração
-- ![Escolha-Cenário](https://i.imgur.com/BlELEqn.jpeg)
-- ![Pawn-Randomizer](https://i.imgur.com/DHO6NBk.jpeg)
-- ![Main-Menu](https://i.imgur.com/mV9h8zy.jpeg)
+![Escolha-Cenário](https://i.imgur.com/BlELEqn.jpeg)
+![Pawn-Randomizer](https://i.imgur.com/DHO6NBk.jpeg)
+![Main-Menu](https://i.imgur.com/mV9h8zy.jpeg)
 ---
 
 ## ✨ Funcionalidades Atuais
