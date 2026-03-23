@@ -1,14 +1,14 @@
 # 🚀 RimWorld Mobile (Unofficial Project)
-![Original-Game]
-![FrameWork]
+- [Original-Game: RimwolrdGame](https://rimworldgame.com/)
+- [FrameWork: Love2D](https://love2d.org/)
 
 Uma adaptação experimental do aclamado simulador de colônia **RimWorld** para dispositivos móveis, focada em otimização de performance e interface tátil.
 
 
 ## 📸 Screenshots / Demonstração
-- ![Escolha-Cenário](https://ibb.co/tpH63021)
-- ![Pawn-Randomizer](https://ibb.co/fzYpgGp2)
-- ![Main-Menu](https://ibb.co/pjDNHFwb)
+- ![Escolha-Cenário](https://i.imgur.com/BlELEqn.jpeg)
+- ![Pawn-Randomizer](https://i.imgur.com/DHO6NBk.jpeg)
+- ![Main-Menu](https://i.imgur.com/mV9h8zy.jpeg)
 ---
 
 ## ✨ Funcionalidades Atuais
