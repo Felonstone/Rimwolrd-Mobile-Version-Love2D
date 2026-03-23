@@ -12,11 +12,20 @@ Uma adaptação experimental do aclamado simulador de colônia **RimWorld** para
 ---
 
 ## ✨ Funcionalidades Atuais
-- [In-Progress] Menu Inicial
-- [In-Progress] Geração de Mapas por Sementes
-- [In-Progress] Geração de Colonos por Sementes/IDs Unicos
+- [X] Menu Inicial
 - [In-Progress] Suporte a Diferentes Tamanhos de Telas
 - [In-Progress] Sprites Originais e Pesados(Vou Resolver)
+- [Tester] Mapa Inicial com Pawn "Pandora"-Erro na Movimentação-
+
+## 🔮 Planos Para o Futuro
+- [ ] I.A Para Colono
+- [ ] I.A Para Mobs e Raiders
+- [In-Progress] Geração de Mapas por Sementes
+- [In-Progress] Geração de Colonos por Sementes/IDs Unicos
+- [ ] Modo Multiplayer
+- [ ] Todas as DLCs Adicionadas no Jogo Base
+- [ ] Diferentes Biomas e Células de Pouso
+
 
 
 ## 🛠️ Tecnologias Utilizadas
@@ -24,7 +33,9 @@ Uma adaptação experimental do aclamado simulador de colônia **RimWorld** para
 - **Framework:** Love2D
 
 ## 🚀 Como Rodar o Projeto (Para Desenvolvedores)
-- **Mobile:** Baixe **Love2D** e coloque os arquivos na pasta **Asset** dentro do **APK do Love2D**
+- **Mobile:** 
+Baixe **Love2D** e coloque os arquivos na pasta **Asset** dentro do **APK do Love2D** ou crie um arquivo **.love** e coloque na pasta **Data** do Love2D
+
 
 
 
