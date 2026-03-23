@@ -13,15 +13,15 @@ Uma adaptação experimental do aclamado simulador de colônia **RimWorld** para
 
 ## ✨ Funcionalidades Atuais
 - [X] Menu Inicial
-- [In-Progress] Suporte a Diferentes Tamanhos de Telas
-- [In-Progress] Sprites Originais e Pesados(Vou Resolver)
-- [Tester] Mapa Inicial com Pawn "Pandora"-Erro na Movimentação-
+- [X] Suporte a Diferentes Tamanhos de Telas
+- [X] Sprites Originais e Pesados(Vou Resolver)
+- [X] Mapa Inicial com Pawn "Pandora"-Erro na Movimentação-
 
 ## 🔮 Planos Para o Futuro
 - [ ] I.A Para Colono
 - [ ] I.A Para Mobs e Raiders
-- [In-Progress] Geração de Mapas por Sementes
-- [In-Progress] Geração de Colonos por Sementes/IDs Unicos
+- [ ] Geração de Mapas por Sementes
+- [ ] Geração de Colonos por Sementes/IDs Unicos
 - [ ] Modo Multiplayer
 - [ ] Todas as DLCs Adicionadas no Jogo Base
 - [ ] Diferentes Biomas e Células de Pouso
