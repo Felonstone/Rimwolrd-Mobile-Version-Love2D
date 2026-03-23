@@ -11,8 +11,8 @@ function Load_Main_Menu_Background()
     tocarMusica()
     Music_Volume = 0.50
     musica:setVolume(Music_Volume)
-    tocarButton_Click()
-    Button_click:setVolume(Music_Volume)
+    --tocarButton_Click()
+    --Button_click:setVolume(Music_Volume)
     --musica:setVolume(0.50)
   
     --Fechar Musica
@@ -196,13 +196,17 @@ function Start_Main_Menu_Buttons()
             
             --474
         end
-    local function getAndroidVersion()
-        local handle = io.popen("getprop ro.build.version.release") -- Comando Android
-        if not handle then return "Não detectado" end
-        local version = handle:read("*a"):gsub("%s+", "")
-        handle:close()
-        return version or "Erro"
-        end
+    osString = love.system.getOS( )
+    if osString == "Android" then
+        local function getAndroidVersion()
+            local handle = io.popen("getprop ro.build.version.release") -- Comando Android
+            if not handle then return "Não detectado" end
+            local version = handle:read("*a"):gsub("%s+", "")
+            handle:close()
+            return version or "Erro"
+            end
+    else
+    end
 
     love.graphics.setFont(b8)
     love.graphics.setColor(255, 255,255)
@@ -211,12 +215,22 @@ function Start_Main_Menu_Buttons()
     local dataHora = os.date("%d/%m/%Y \nHora: %H:%M:%S")
     local state, percent, seconds = love.system.getPowerInfo()
 
-    love.graphics.print(
+    if osString == "Android" then
+        love.graphics.print(
     "Version: 0.0.232/(" .. love.system.getOS().." "..getAndroidVersion() ..
     ")\nCompiled: 13/06/2025" ..
     "\nData: " .. dataHora ..
     "\nBateria: " .. (percent and percent .. "% - " ..state or "Não disponível"),
     10, 10)
+    else
+        love.graphics.print(
+    "Version: 0.0.232/(" .. love.system.getOS().." " ..
+    ")\nCompiled: 13/06/2025" ..
+    "\nData: " .. dataHora ..
+    "\nBateria: " .. (percent and percent .. "% - " ..state or "Não disponível"),
+    10, 10)
+    end
+
     love.graphics.setFont(b4)
         
     

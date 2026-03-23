@@ -7,10 +7,10 @@ function love.conf(t)
 
 	t.audio.mixwithsystem = true 
 	t.externalstorage = true
-    t.console = false
+    t.console = true
 	--t.window.borderless = true
-    t.window.fullscreen = true
-    t.window.resizable = false
+    t.window.fullscreen = false
+    t.window.resizable = true
     --t.window.vsync = 1
 	--t.window.msaa = 0  
 	--t.window.highdpi = true

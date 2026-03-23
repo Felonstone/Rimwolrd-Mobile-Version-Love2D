@@ -12,7 +12,7 @@ function Load_Config_Menu()
     --tocarMusica()
     Music_Volume = 0.5
     musica:setVolume(Music_Volume)
-    Button_click:setVolume(Music_Volume)
+    --Button_click:setVolume(Music_Volume)
     config_menu = 1 
     
     Multiplayer_Archive = require ("Source/Telas/NewGame/Funcoes_Inside/Multiplayer_Config")
