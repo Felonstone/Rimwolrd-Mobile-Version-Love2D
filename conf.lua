@@ -1,6 +1,6 @@
 function love.conf(t)
-    t.title = "Rimwolrd"
-    t.author = "José Alyson"
+    t.title = "Rimwolrd Mobile Version"
+    t.author = "Felonstone"
 	t.version = "11.4"
 	t.window.icon = 'Assets/tier-silver.png'
 
