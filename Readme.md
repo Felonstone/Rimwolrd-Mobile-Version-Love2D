@@ -1,4 +1,4 @@
-# 🚀 RimWorld Mobile (Unofficial Project)
+# 🚀 RimWorld Mobile (Projeto nao Oficial)
 - [Original-Game: RimwolrdGame](https://rimworldgame.com/)
 - [FrameWork: Love2D](https://love2d.org/)
 
