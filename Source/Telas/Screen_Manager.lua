@@ -72,9 +72,89 @@ end
 
 
 
+--Pc Controllers
+
+love.graphics.setFont(b1)
+love.graphics.setColor(1,0,0)
+love.graphics.print("Mouse X: "..mousex.."\nMouse Y:"..mousey.."\nScreen: "..Screen_Type.."\nMenu = "..menu.."\nCenario: "..Cenario.Select_Cenario.."\nClose: "..close, mousex+16,mousey)
+love.graphics.setFont(b4)
+--NewGame
+if mousex >= 495 and mousex <= 666 then
+    if mousey >= 90 and mousey <= 146 then
+        Screen_Type = "New_Game"
+
+        menu = 3
+
+    end
+end
+
+--Config Menu
+if mousex > 495 and mousex < 665 then
+    if mousey > 215 and mousey < (215+59) and Screen_Type == "Main_Menu" then
+        Start_Config_Menu()
+        Screen_Type = "Config_Menu"
+
+        close = 0
+
+    end
+end
+if Screen_Type == "Config_Menu" then
+    if mousex > 275 and mousex < (275+120) then
+        if mousey > 225 and mousey < (225+46) then
+            menu = 0
+            Screen_Type = "Main_Menu"
+            
+            Start_Main_Menu()
+        end
+    end
+end
+
+
+--Close Game
+
+if Screen_Type == "Main_Menu" and mousex >= 29 and mousex <= 149 and mousey >= 229 and mousey <= 275 then
+    close = 1
+    Pop_UpDown = true
+end
+
+if close == 1 and Screen_Type == "Main_Menu" then
+    if mousex > 247 and mousex < 367 then
+        if mousey > 164 and mousey < (164 + 46) then
+            ClosegameNow()
+        end
+    end
+    if mousex > 358 and mousex < 469 then
+        if mousey > 164 and mousey < (164 + 46) then
+            menu = 0
+            Start_Main_Menu()
+            close = 0
+            Pop_UpDown = false
+ 
+        end
+    end
+end
+--Back Main Menu
+if Screen_Type == "New_Game" and menu == 3 then
+    if mousey > 250 and mousey < (250+46) then
+        if mousex > 115 and mousex < (115+120) then
+        
+            Screen_Type = "Main_Menu"
+            Start_Main_Menu()
+        end
+    end
+end
+
+
+
+
+
+
+-- Mobile Controllers
 if not touchHandled then
 
     
+
+
 
 m = love.touch.getTouches()
     for id = 1, #m do

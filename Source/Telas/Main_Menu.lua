@@ -205,7 +205,8 @@ function Start_Main_Menu_Buttons()
             handle:close()
             return version or "Erro"
             end
-    else
+        elseif osString == "Windows" then
+
     end
 
     love.graphics.setFont(b8)
@@ -223,11 +224,11 @@ function Start_Main_Menu_Buttons()
     "\nBateria: " .. (percent and percent .. "% - " ..state or "Não disponível"),
     10, 10)
     else
+        love.graphics.setFont(b1)
         love.graphics.print(
-    "Version: 0.0.232/(" .. love.system.getOS().." " ..
+    "Version: 0.0.232/("..love.system.getOS().." " ..
     ")\nCompiled: 13/06/2025" ..
-    "\nData: " .. dataHora ..
-    "\nBateria: " .. (percent and percent .. "% - " ..state or "Não disponível"),
+    "\nData: "..dataHora,
     10, 10)
     end
 

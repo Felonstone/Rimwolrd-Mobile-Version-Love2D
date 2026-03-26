@@ -1,8 +1,12 @@
+function SizeScreen()
+    
+end
+
 
 function Vertical_de_3()
     --if Adm == true then
         love.graphics.setColor(1,0,0)
-        love.graphics.line(Screen_Width/3,0, Screen_Width/3, Screen_Width)
+        love.graphics.line(Screen_Width/3,0, Screen_Width/3, Screen_Width) 
     
         love.graphics.setColor(1,0,0)
         love.graphics.line((Screen_Width/3) + (Screen_Width/3),0, (Screen_Width/3) + (Screen_Width/3), Screen_Width)

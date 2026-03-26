@@ -7,7 +7,7 @@ function love.load()
 
     --Adm Recursos 
 	ScreenScale = require ('Source/Dev Resources/Screen Scale')
-    
+    screenWidth, screenHeight = love.graphics.getDimensions()
 	--Call Load
     Load_Main_Menu()
     
@@ -18,10 +18,16 @@ function love.update(dt)
 
     --Call Update
     Update_Function(dt)
+    mousex = love.mouse.getX()
+    mousey = love.mouse.getY()
+
 
 end
 
 function love.draw()
+
+    
+    
 
     --Call Draw
     Draw_Things()

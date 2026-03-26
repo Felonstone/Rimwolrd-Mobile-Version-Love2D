@@ -7,7 +7,7 @@ function love.conf(t)
 
 	t.audio.mixwithsystem = true 
 	t.externalstorage = true
-    t.console = true
+    t.console = false
 	--t.window.borderless = true
     t.window.fullscreen = false
     t.window.resizable = true
@@ -18,12 +18,12 @@ function love.conf(t)
 
 	t.modules.data = true
     t.modules.audio = true
-    t.modules.keyboard = false
+    t.modules.keyboard = true
     t.modules.event = true
     t.modules.image = true
     t.modules.graphics = true
     t.modules.timer = true
-    t.modules.mouse = false
+    t.modules.mouse = true
     t.modules.sound = true
     t.modules.joystick = false
     t.modules.physics = false
